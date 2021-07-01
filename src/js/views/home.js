@@ -1,15 +1,21 @@
-import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
+import React, { useContext } from "react";
 import "../../styles/home.scss";
+import DataRow from "../component/DataRow/dataRow";
+import { Context } from "../store/appContext";
 
-export const Home = () => (
-	<div className="text-center mt-5">
-		<h1>Hello Rigo!</h1>
-		<p>
-			<img src={rigoImage} />
-		</p>
-		<a href="#" className="btn btn-success">
-			If you see this green button, bootstrap is working
-		</a>
-	</div>
-);
+export const Home = () => {
+	const { store, actions } = useContext(Context);
+	return (
+		<div className="mt-5 backgroundimg">
+			{store.people.length > 0 && (
+				<DataRow title="People" data={store.people} addFavorite={actions.addFavorite} />
+			)}
+			{store.planets.length > 0 && (
+				<DataRow title="Planets" data={store.planets} addFavorite={actions.addFavorite} />
+			)}
+			{store.starships.length > 0 && (
+				<DataRow title="Starships" data={store.starships} addFavorite={actions.addFavorite} />
+			)}
+		</div>
+	);
+};
