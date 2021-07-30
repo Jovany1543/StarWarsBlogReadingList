@@ -9,7 +9,7 @@ export const MyNavbar = () => {
 		<Navbar bg="dark">
 			<Navbar.Brand href="#home">
 				<img
-					src="https://lh3.googleusercontent.com/proxy/841RXkx9gwELgm0u22H6U_qxOWvGqZdlku_6j-sBD8YWI1Yjxmy_W3lk-en_k7mbyfYXKQpX4pB4u0K9voETsjxFC6VulfCDWeETOBP2WfOYCkHC5JReHT7p4x_S"
+					src="https://lh3.googleusercontent.com/proxy/_6aFlPryhXlcG68Nkn3sSwfxbrgllqgtF45YxE3pVwY_Xhb_rkSqHgN9OD-OJd00c5hploJa01rVPhhY0mXXv2HTa_aj8rIPYxat588-5rLAb2j7PTMhNNoPQ5jp"
 					height="60"
 					className="d-inline-block align-top"
 					alt="React Bootstrap logo"
